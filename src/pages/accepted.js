@@ -10,7 +10,7 @@ function MyPosts() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/myposts")
+      .get("https://ecospott-backend.onrender.com/myposts")
       .then((response) => console.log(response.data))
       .catch((error) => console.log(error));
   }, []);
